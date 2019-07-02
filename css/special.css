@@ -1,0 +1,212 @@
+/* CSS classes for special features */
+
+/* Do not include it as is but take only which is necessary */
+
+/* triangles */
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-bottom: 5px solid black;
+}
+
+.triangle_host {
+    display: inline-block;
+    position:relative;
+    cursor:pointer;
+    width:12px;
+    height:12px;
+    margin-left:2px;
+}
+
+.select_page_other{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.arrow-down-red {
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid rgb(196,43,44);
+    position:absolute;
+}
+
+.arrow-down-gold{
+    width: 0; 
+    height: 0; 
+    top:1px;
+    left:2px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid rgb(245,202,83);
+    position:absolute;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+
+    border-left: 60px solid green;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid blue; 
+}
+
+/* selection */
+
+.no_select, .unselectable {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.selectable {
+    -moz-user-select:text;
+    -khtml-user-select:text;
+    -webkit-user-select:text;
+    -ms-user-select:text;
+    -o-user-select:text;
+    user-select:text;
+}
+
+/* shadow */
+
+.shadow {
+    -webkit-box-shadow:0 0 20px #ccc;
+    -moz-box-shadow:0 0 20px #ccc;
+    -o-box-shadow:0 0 20px #ccc;
+    -ms-box-shadow:0 0 20px #ccc;
+    box-shadow:0 0 20px #ccc;
+}
+
+/* round corners */
+
+.rc50 {
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    -khtml-border-radius:50px;
+    border-radius:50px;
+}
+
+.rc40 {
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    -khtml-border-radius:40px;
+    border-radius:40px;
+}
+
+.rc_rb {
+    -moz-border-radius:0 0 10px;
+    -webkit-border-radius:0 0 10px 0;
+    -khtml-border-radius:0 0 10px 0;
+    border-radius:0 0 10px 0;
+}
+
+.rc_lb {
+    -moz-border-radius:0 0 0 20px;
+    -webkit-border-radius:0 0 0 20px;
+    -khtml-border-radius:0 0 0 20px;
+    border-radius:0 0 0 20px;
+}
+
+.rc_bottom {
+    -moz-border-radius:0 0 10px 10px;
+    -webkit-border-radius:0 0 10px 10px;
+    -khtml-border-radius:0 0 10px 10px;
+    border-radius:0 0 10px 10px;
+}
+
+.rc_top {
+    -moz-border-radius:10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    -khtml-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+}
+
+.rc_lrt {
+    -moz-border-radius:10px 0;
+    -webkit-border-radius:10px 0 10px 0;
+    -khtml-border-radius:10px 0 10px 0;
+    border-radius:10px 0 10px 0;
+}
+
+.rc_rt {
+    -moz-border-radius:0 10px;
+    -webkit-border-radius:0 10px 0 10px;
+    -khtml-border-radius:0 10px 0 10px;
+    border-radius:0 10px 0 10px;
+}
+
+.rc20 {
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    border-radius:20px;
+}
+
+.rc30 {
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    -khtml-border-radius:30px;
+    border-radius:30px;
+}
+
+.rclb {
+    border-radius:0 0 0 10px;
+}
+
+.rc5 {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -khtml-border-radius:5px;
+    border-radius:5px;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src: url('helveticaneuecyr-light-webfont.eot');
+    src: url('helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('helveticaneuecyr-light-webfont.woff2') format('woff2'),
+	url('helveticaneuecyr-light-webfont.woff') format('woff'),
+	url('helveticaneuecyr-light-webfont.ttf') format('truetype'),
+	url('helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas_neue';
+    src: url('bebasneueregular.eot');
+    src: url('bebasneueregular.eot?#iefix') format('embedded-opentype'),
+	url('BebasNeueRegular.otf') format("opentype"),
+        url('bebasneueregular.woff') format('woff'),
+        url('bebasneueregular.ttf') format('truetype'),
+        url('bebasneueregular.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.history{
+    font-family:'bebas_neue', Impact, sans-serif; 
+    font-size: 1.4rem;
+    font-weight:normal;
+}
